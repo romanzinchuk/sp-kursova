@@ -1,0 +1,103 @@
+====================================================
+|  #  |  SYMBOL  |      TYPE      |  VALUE  | LINE |
+|=====|==========|================|=========|======|
+|  1  |  Program |        Program | Program |    1 |
+|  2  |          |     Identifier |     _pP |    1 |
+|  3  |        ; |      Semicolon |       ; |    1 |
+|  4  |      Var |           Vars |     Var |    2 |
+|  5  |    Int16 |        VarType |   Int16 |    2 |
+|  6  |          |     Identifier |     _aA |    2 |
+|  7  |        , |          Comma |       , |    2 |
+|  8  |          |     Identifier |     _bB |    2 |
+|  9  |        , |          Comma |       , |    2 |
+|  10 |          |     Identifier |     _xX |    2 |
+|  11 |        , |          Comma |       , |    2 |
+|  12 |          |     Identifier |     _yY |    2 |
+|  13 |        ; |      Semicolon |       ; |    2 |
+|  14 |    Begin |      ProgStart |   Begin |    3 |
+|  15 |      Get |           Read |     Get |    4 |
+|  16 |        ( |        LBraket |       ( |    4 |
+|  17 |          |     Identifier |     _aA |    4 |
+|  18 |        ) |        RBraket |       ) |    4 |
+|  19 |        ; |      Semicolon |       ; |    4 |
+|  20 |      Get |           Read |     Get |    5 |
+|  21 |        ( |        LBraket |       ( |    5 |
+|  22 |          |     Identifier |     _bB |    5 |
+|  23 |        ) |        RBraket |       ) |    5 |
+|  24 |        ; |      Semicolon |       ; |    5 |
+|  25 |      Put |          Write |     Put |    6 |
+|  26 |        ( |        LBraket |       ( |    6 |
+|  27 |          |     Identifier |     _aA |    6 |
+|  28 |        + |       Addition |       + |    6 |
+|  29 |          |     Identifier |     _bB |    6 |
+|  30 |        ) |        RBraket |       ) |    6 |
+|  31 |        ; |      Semicolon |       ; |    6 |
+|  32 |      Put |          Write |     Put |    7 |
+|  33 |        ( |        LBraket |       ( |    7 |
+|  34 |          |     Identifier |     _aA |    7 |
+|  35 |        - |    Subtraction |       - |    7 |
+|  36 |          |     Identifier |     _bB |    7 |
+|  37 |        ) |        RBraket |       ) |    7 |
+|  38 |        ; |      Semicolon |       ; |    7 |
+|  39 |      Put |          Write |     Put |    8 |
+|  40 |        ( |        LBraket |       ( |    8 |
+|  41 |          |     Identifier |     _aA |    8 |
+|  42 |      Mul | Multiplication |     Mul |    8 |
+|  43 |          |     Identifier |     _bB |    8 |
+|  44 |        ) |        RBraket |       ) |    8 |
+|  45 |        ; |      Semicolon |       ; |    8 |
+|  46 |      Put |          Write |     Put |    9 |
+|  47 |        ( |        LBraket |       ( |    9 |
+|  48 |          |     Identifier |     _aA |    9 |
+|  49 |      Div |       Division |     Div |    9 |
+|  50 |          |     Identifier |     _bB |    9 |
+|  51 |        ) |        RBraket |       ) |    9 |
+|  52 |        ; |      Semicolon |       ; |    9 |
+|  53 |      Put |          Write |     Put |   10 |
+|  54 |        ( |        LBraket |       ( |   10 |
+|  55 |          |     Identifier |     _aA |   10 |
+|  56 |      Mod |            Mod |     Mod |   10 |
+|  57 |          |     Identifier |     _bB |   10 |
+|  58 |        ) |        RBraket |       ) |   10 |
+|  59 |        ; |      Semicolon |       ; |   10 |
+|  60 |          |     Identifier |     _xX |   11 |
+|  61 |       := |     Assignment |      := |   11 |
+|  62 |        ( |        LBraket |       ( |   11 |
+|  63 |          |     Identifier |     _aA |   11 |
+|  64 |        - |    Subtraction |       - |   11 |
+|  65 |          |     Identifier |     _bB |   11 |
+|  66 |        ) |        RBraket |       ) |   11 |
+|  67 |      Mul | Multiplication |     Mul |   11 |
+|  68 |          |         Number |      10 |   11 |
+|  69 |        + |       Addition |       + |   11 |
+|  70 |        ( |        LBraket |       ( |   11 |
+|  71 |          |     Identifier |     _aA |   11 |
+|  72 |        + |       Addition |       + |   11 |
+|  73 |          |     Identifier |     _bB |   11 |
+|  74 |        ) |        RBraket |       ) |   11 |
+|  75 |      Div |       Division |     Div |   11 |
+|  76 |          |         Number |      10 |   11 |
+|  77 |        ; |      Semicolon |       ; |   11 |
+|  78 |          |     Identifier |     _yY |   12 |
+|  79 |       := |     Assignment |      := |   12 |
+|  80 |          |     Identifier |     _xX |   12 |
+|  81 |        + |       Addition |       + |   12 |
+|  82 |        ( |        LBraket |       ( |   12 |
+|  83 |          |     Identifier |     _xX |   12 |
+|  84 |      Mod |            Mod |     Mod |   12 |
+|  85 |          |         Number |      10 |   12 |
+|  86 |        ) |        RBraket |       ) |   12 |
+|  87 |        ; |      Semicolon |       ; |   12 |
+|  88 |      Put |          Write |     Put |   13 |
+|  89 |        ( |        LBraket |       ( |   13 |
+|  90 |          |     Identifier |     _xX |   13 |
+|  91 |        ) |        RBraket |       ) |   13 |
+|  92 |        ; |      Semicolon |       ; |   13 |
+|  93 |      Put |          Write |     Put |   14 |
+|  94 |        ( |        LBraket |       ( |   14 |
+|  95 |          |     Identifier |     _yY |   14 |
+|  96 |        ) |        RBraket |       ) |   14 |
+|  97 |        ; |      Semicolon |       ; |   14 |
+|  98 |      End |        ProgEnd |     End |   15 |
+|  99 |          |      EndOfFile |         |   -1 |
+====================================================

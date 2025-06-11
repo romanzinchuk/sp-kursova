@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{49accf63-e7a2-49b3-b4a4-b48873eee50a}</ProjectGuid>
+    <RootNamespace>spkursova</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build_$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build_$(Platform)\_obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build_$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build_$(Platform)\_obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Core\Backus\BackusRule.cpp" />
+    <ClCompile Include="Core\Generator\Generator.cpp" />
+    <ClCompile Include="Core\Parser\TokenParser.cpp" />
+    <ClCompile Include="Core\Parser\TokenRegister.cpp" />
+    <ClCompile Include="Rules\AssignmentRule\AssignmentRule.cpp" />
+    <ClCompile Include="Rules\EquationRule\EquationRule.cpp" />
+    <ClCompile Include="Rules\IdentRule\IdentRule.cpp" />
+    <ClCompile Include="Rules\Operators\For\ForRule.cpp" />
+    <ClCompile Include="Rules\Operators\Goto\GotoRule.cpp" />
+    <ClCompile Include="Rules\Operators\If\IfRule.cpp" />
+    <ClCompile Include="Rules\Operators\RepeatUntil\RepeatUntilRule.cpp" />
+    <ClCompile Include="Rules\Operators\WhileC\WhileRule.cpp" />
+    <ClCompile Include="Rules\ReadRule\ReadRule.cpp" />
+    <ClCompile Include="Rules\StringRule\String.cpp" />
+    <ClCompile Include="Rules\StringRule\StringRule.cpp" />
+    <ClCompile Include="Rules\VarsBlokRule\VarsBlokRule.cpp" />
+    <ClCompile Include="Rules\WriteRule\WriteRule.cpp" />
+    <ClCompile Include="sp_kursova.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Symbols.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="Utils\TablePrinter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Core\Backus\BackusRule.h" />
+    <ClInclude Include="Core\Backus\BackusRuleBase.h" />
+    <ClInclude Include="Core\Backus\BackusRuleItem.h" />
+    <ClInclude Include="Core\Backus\BackusRuleStorage.h" />
+    <ClInclude Include="Core\Backus\IBackusRule.h" />
+    <ClInclude Include="Core\Generator\Generator.h" />
+    <ClInclude Include="Core\Generator\GeneratorDetails.h" />
+    <ClInclude Include="Core\Generator\GeneratorItemBase.h" />
+    <ClInclude Include="Core\Generator\GeneratorUtils.h" />
+    <ClInclude Include="Core\Generator\IGeneratorItem.h" />
+    <ClInclude Include="Core\IItem.h" />
+    <ClInclude Include="Core\Parser\TokenParser.h" />
+    <ClInclude Include="Core\Parser\TokenRegister.h" />
+    <ClInclude Include="Core\Tokens\IToken.hpp" />
+    <ClInclude Include="Core\Tokens\TokenBase.hpp" />
+    <ClInclude Include="EqualGreater.h">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Rules\AssignmentRule\Assignment.h" />
+    <ClInclude Include="Rules\AssignmentRule\AssignmentRule.h" />
+    <ClInclude Include="Rules\EquationRule\Addition.h" />
+    <ClInclude Include="Rules\EquationRule\And.h" />
+    <ClInclude Include="Rules\EquationRule\Division.h" />
+    <ClInclude Include="Rules\EquationRule\Equal.h" />
+    <ClInclude Include="Rules\EquationRule\EquationRule.h" />
+    <ClInclude Include="Rules\EquationRule\Greate.h" />
+    <ClInclude Include="Rules\EquationRule\Less.h" />
+    <ClInclude Include="Rules\EquationRule\Mod.h" />
+    <ClInclude Include="Rules\EquationRule\Multiplication.h" />
+    <ClInclude Include="Rules\EquationRule\Not.h" />
+    <ClInclude Include="Rules\EquationRule\NotEqual.h" />
+    <ClInclude Include="Rules\EquationRule\Number.h" />
+    <ClInclude Include="Rules\EquationRule\Or.h" />
+    <ClInclude Include="Rules\EquationRule\Subtraction.h" />
+    <ClInclude Include="Rules\IdentRule\Identifier.h" />
+    <ClInclude Include="Rules\IdentRule\IdentRule.h" />
+    <ClInclude Include="Rules\IdentRule\Undefined.h" />
+    <ClInclude Include="Rules\Operators\For\Do.h" />
+    <ClInclude Include="Rules\Operators\For\DownTo.h" />
+    <ClInclude Include="Rules\Operators\For\For.h" />
+    <ClInclude Include="Rules\Operators\For\ForRule.h" />
+    <ClInclude Include="Rules\Operators\For\To.h" />
+    <ClInclude Include="Rules\Operators\Goto\Goto.h" />
+    <ClInclude Include="Rules\Operators\Goto\GotoRule.h" />
+    <ClInclude Include="Rules\Operators\Goto\Label.h" />
+    <ClInclude Include="Rules\Operators\If\Else.h" />
+    <ClInclude Include="Rules\Operators\If\If.h" />
+    <ClInclude Include="Rules\Operators\If\IfRule.h" />
+    <ClInclude Include="Rules\Operators\LoopInterrupt\LoopBreak.h" />
+    <ClInclude Include="Rules\Operators\LoopInterrupt\LoopContinue.h" />
+    <ClInclude Include="Rules\Operators\RepeatUntil\Repeat.h" />
+    <ClInclude Include="Rules\Operators\RepeatUntil\RepeatUntilRule.h" />
+    <ClInclude Include="Rules\Operators\RepeatUntil\Until.h" />
+    <ClInclude Include="Rules\Operators\WhileC\While.h" />
+    <ClInclude Include="Rules\Operators\WhileC\WhileRule.h" />
+    <ClInclude Include="Rules\ReadRule\Read.h" />
+    <ClInclude Include="Rules\ReadRule\ReadRule.h" />
+    <ClInclude Include="Rules\StringRule\String.h" />
+    <ClInclude Include="Rules\StringRule\StringRule.h" />
+    <ClInclude Include="Rules\VarsBlokRule\VarsBlokRule.h" />
+    <ClInclude Include="Rules\VarsBlokRule\VarType.h" />
+    <ClInclude Include="Rules\WriteRule\Write.h" />
+    <ClInclude Include="Rules\WriteRule\WriteRule.h" />
+    <ClInclude Include="SimpleTokens.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Symbols.h" />
+    <ClInclude Include="Tokens\Common.h" />
+    <ClInclude Include="Tokens\Common\Comment.h" />
+    <ClInclude Include="Tokens\Common\EndOfFile.h" />
+    <ClInclude Include="Tokens\Common\LComment.h" />
+    <ClInclude Include="Tokens\Common\Program.h" />
+    <ClInclude Include="Tokens\Common\RComment.h" />
+    <ClInclude Include="Tokens\Common\Unknown.h" />
+    <ClInclude Include="Tokens\Common\Vars.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="Utils\magic_enum.hpp" />
+    <ClInclude Include="Utils\singleton.hpp" />
+    <ClInclude Include="Utils\StringUtils.h" />
+    <ClInclude Include="Utils\TablePrinter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

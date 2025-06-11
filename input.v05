@@ -1,0 +1,15 @@
+Program _pP; 
+Var Int16 _aA,_bB,_xX,_yY;
+Begin
+Get(_aA);
+Get(_bB);
+Put(_aA + _bB);
+Put(_aA - _bB);
+Put(_aA Mul _bB);
+Put(_aA Div _bB);
+Put(_aA Mod _bB);
+_xX:=(_aA - _bB) Mul 10 + (_aA + _bB) Div 10;
+_yY:=_xX + (_xX Mod 10);
+Put(_xX);
+Put(_yY);
+End

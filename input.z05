@@ -1,0 +1,15 @@
+Program _Ppp; 
+Var int16_t _Aaa,_Bbb,_Xxx,_Yyy;
+Begin
+Get(_Aaa);
+Get(_Bbb);
+Put(_Aaa + _Bbb);
+Put(_Aaa - _Bbb);
+Put(_Aaa *_Bbb);
+Put(_Aaa / _Bbb);
+Put(_Aaa % _Bbb);
+_Xxx:=(_Aaa - _Bbb) * 10 + (_Aaa + _Bbb) / 10;
+_Yyy:=_Xxx + (_Xxx % 10);
+Put(_Xxx);
+Put(_Yyy);
+End

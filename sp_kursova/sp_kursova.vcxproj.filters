@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Tokens">
+      <UniqueIdentifier>{3912669f-e34f-4d07-b6ed-3a5f7122589f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tokens\KWords">
+      <UniqueIdentifier>{a968b5ea-8c8b-4d9b-a85a-6684a9f0ffd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tokens\General">
+      <UniqueIdentifier>{fd762c02-e19b-46ef-b2e7-8e98dca36140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{6805258b-9d85-4a8e-8102-93741060501c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tokens\Comment">
+      <UniqueIdentifier>{26003131-e941-4232-8d9a-9028efae1ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{8965a94c-eda3-488d-a89d-e608e4bc10e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Backus">
+      <UniqueIdentifier>{7d943335-3bea-41b0-ae1e-a227a173500e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Generator">
+      <UniqueIdentifier>{3cb9a8d3-68fc-4120-b5b4-700f2e221d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Parser">
+      <UniqueIdentifier>{8ea55811-d07b-4a4b-8791-25412428627b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Tokens">
+      <UniqueIdentifier>{c644ecd0-201f-4422-b744-be75aab12501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators">
+      <UniqueIdentifier>{807321d3-0df3-463d-8b61-52905f7769f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\If_Else">
+      <UniqueIdentifier>{0a7275cd-14f4-4484-a7a6-097dd9a55e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\While">
+      <UniqueIdentifier>{5df30afc-08e7-4b89-a5a0-cc422e25636d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\Goto">
+      <UniqueIdentifier>{f0b8788e-0693-4a8b-8e21-7b246da561de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\For">
+      <UniqueIdentifier>{ec05867e-7bf5-4a4b-b59c-632bd00910b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\Repeat_Until">
+      <UniqueIdentifier>{5c4c2f14-3352-4ead-b2c5-79975eacdbf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules">
+      <UniqueIdentifier>{c446c623-440e-4ad7-9cbd-44cc918b3c5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\AssignmentRule">
+      <UniqueIdentifier>{816478a6-bccb-4421-80fc-11e6cfef1307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\IdentRule">
+      <UniqueIdentifier>{a8fe9570-74f1-432b-8b3b-d7220c990910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\ReadRule">
+      <UniqueIdentifier>{de683bd3-99fe-4a1f-99dd-df730021d68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\StringRule">
+      <UniqueIdentifier>{3facaae5-e37d-4a8d-a80b-ddb7d18716bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\VarsBlokRule">
+      <UniqueIdentifier>{06762390-d53d-4642-b5e5-6f4f8d939f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\WriteRule">
+      <UniqueIdentifier>{c8514efc-8d7e-4b69-b27a-f12e80207480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\EquationRule">
+      <UniqueIdentifier>{777b7b23-f471-45cb-be64-67583714fb8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\EquationRule\Compare">
+      <UniqueIdentifier>{a6e1adea-dcfe-4874-8bf2-1404d9b7fc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\EquationRule\Logic">
+      <UniqueIdentifier>{f54a249b-b21b-4119-9d83-1d35142cae55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\EquationRule\Arithmetic">
+      <UniqueIdentifier>{ad534994-d4ed-4c9d-9f8b-23cf5554bd1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rules\EquationRule\Mult">
+      <UniqueIdentifier>{47901848-9bc6-43e6-872a-cbe84eb80ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TokenOperators\LoopInterrupt">
+      <UniqueIdentifier>{b7effa42-a74d-42fc-aef7-c0e21385c3aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sp_kursova.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Backus\BackusRule.cpp">
+      <Filter>Core\Backus</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Generator\Generator.cpp">
+      <Filter>Core\Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parser\TokenParser.cpp">
+      <Filter>Core\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Parser\TokenRegister.cpp">
+      <Filter>Core\Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\TablePrinter.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Symbols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\EquationRule\EquationRule.cpp">
+      <Filter>Rules\EquationRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\AssignmentRule\AssignmentRule.cpp">
+      <Filter>Rules\AssignmentRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\IdentRule\IdentRule.cpp">
+      <Filter>Rules\IdentRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\WriteRule\WriteRule.cpp">
+      <Filter>Rules\WriteRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\VarsBlokRule\VarsBlokRule.cpp">
+      <Filter>Rules\VarsBlokRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\StringRule\String.cpp">
+      <Filter>Rules\StringRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\StringRule\StringRule.cpp">
+      <Filter>Rules\StringRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\ReadRule\ReadRule.cpp">
+      <Filter>Rules\ReadRule</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\Operators\If\IfRule.cpp">
+      <Filter>TokenOperators\If_Else</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\Operators\RepeatUntil\RepeatUntilRule.cpp">
+      <Filter>TokenOperators\Repeat_Until</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\Operators\For\ForRule.cpp">
+      <Filter>TokenOperators\For</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\Operators\Goto\GotoRule.cpp">
+      <Filter>TokenOperators\Goto</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules\Operators\WhileC\WhileRule.cpp">
+      <Filter>TokenOperators\While</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backus\BackusRule.h">
+      <Filter>Core\Backus</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backus\BackusRuleItem.h">
+      <Filter>Core\Backus</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backus\BackusRuleStorage.h">
+      <Filter>Core\Backus</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backus\IBackusRule.h">
+      <Filter>Core\Backus</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Generator\IGeneratorItem.h">
+      <Filter>Core\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Generator\Generator.h">
+      <Filter>Core\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parser\TokenParser.h">
+      <Filter>Core\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Parser\TokenRegister.h">
+      <Filter>Core\Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IItem.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TablePrinter.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\RComment.h">
+      <Filter>Tokens\Comment</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\Comment.h">
+      <Filter>Tokens\Comment</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\LComment.h">
+      <Filter>Tokens\Comment</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\EndOfFile.h">
+      <Filter>Tokens\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\Program.h">
+      <Filter>Tokens\KWords</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\Vars.h">
+      <Filter>Tokens\KWords</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common.h">
+      <Filter>Tokens</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Generator\GeneratorDetails.h">
+      <Filter>Core\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Generator\GeneratorItemBase.h">
+      <Filter>Core\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Generator\GeneratorUtils.h">
+      <Filter>Core\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Tokens\IToken.hpp">
+      <Filter>Core\Tokens</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backus\BackusRuleBase.h">
+      <Filter>Core\Backus</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Tokens\TokenBase.hpp">
+      <Filter>Core\Tokens</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens\Common\Unknown.h">
+      <Filter>Tokens\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\singleton.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Symbols.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\NotEqual.h">
+      <Filter>Rules\EquationRule\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Equal.h">
+      <Filter>Rules\EquationRule\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Greate.h">
+      <Filter>Rules\EquationRule\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Less.h">
+      <Filter>Rules\EquationRule\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Or.h">
+      <Filter>Rules\EquationRule\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\And.h">
+      <Filter>Rules\EquationRule\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Not.h">
+      <Filter>Rules\EquationRule\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Addition.h">
+      <Filter>Rules\EquationRule\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Subtraction.h">
+      <Filter>Rules\EquationRule\Arithmetic</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Multiplication.h">
+      <Filter>Rules\EquationRule\Mult</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Division.h">
+      <Filter>Rules\EquationRule\Mult</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Mod.h">
+      <Filter>Rules\EquationRule\Mult</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\Number.h">
+      <Filter>Rules\EquationRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\EquationRule\EquationRule.h">
+      <Filter>Rules\EquationRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\AssignmentRule\Assignment.h">
+      <Filter>Rules\AssignmentRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\AssignmentRule\AssignmentRule.h">
+      <Filter>Rules\AssignmentRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\IdentRule\IdentRule.h">
+      <Filter>Rules\IdentRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\IdentRule\Identifier.h">
+      <Filter>Rules\IdentRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\IdentRule\Undefined.h">
+      <Filter>Rules\IdentRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\WriteRule\Write.h">
+      <Filter>Rules\WriteRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\WriteRule\WriteRule.h">
+      <Filter>Rules\WriteRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\VarsBlokRule\VarType.h">
+      <Filter>Rules\VarsBlokRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\VarsBlokRule\VarsBlokRule.h">
+      <Filter>Rules\VarsBlokRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\StringRule\String.h">
+      <Filter>Rules\StringRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\StringRule\StringRule.h">
+      <Filter>Rules\StringRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\ReadRule\ReadRule.h">
+      <Filter>Rules\ReadRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\ReadRule\Read.h">
+      <Filter>Rules\ReadRule</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\WhileC\While.h">
+      <Filter>TokenOperators\While</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\If\Else.h">
+      <Filter>TokenOperators\If_Else</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\If\If.h">
+      <Filter>TokenOperators\If_Else</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\If\IfRule.h">
+      <Filter>TokenOperators\If_Else</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\RepeatUntil\RepeatUntilRule.h">
+      <Filter>TokenOperators\Repeat_Until</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\RepeatUntil\Until.h">
+      <Filter>TokenOperators\Repeat_Until</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\RepeatUntil\Repeat.h">
+      <Filter>TokenOperators\Repeat_Until</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\For\Do.h">
+      <Filter>TokenOperators\For</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\For\DownTo.h">
+      <Filter>TokenOperators\For</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\For\For.h">
+      <Filter>TokenOperators\For</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\For\To.h">
+      <Filter>TokenOperators\For</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\For\ForRule.h">
+      <Filter>TokenOperators\For</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\Goto\GotoRule.h">
+      <Filter>TokenOperators\Goto</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\Goto\Label.h">
+      <Filter>TokenOperators\Goto</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\Goto\Goto.h">
+      <Filter>TokenOperators\Goto</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\magic_enum.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTokens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\WhileC\WhileRule.h">
+      <Filter>TokenOperators\While</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="EqualGreater.h">
+      <Filter>Rules\EquationRule\Compare</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\LoopInterrupt\LoopBreak.h">
+      <Filter>TokenOperators\LoopInterrupt</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\Operators\LoopInterrupt\LoopContinue.h">
+      <Filter>TokenOperators\LoopInterrupt</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

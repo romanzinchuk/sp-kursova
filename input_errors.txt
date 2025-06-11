@@ -1,0 +1,6 @@
+List of errors
+======================================================================
+There are 0 lexical errors.
+There are 0 syntax errors.
+There are 0 semantic errors.
+

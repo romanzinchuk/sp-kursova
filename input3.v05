@@ -1,0 +1,49 @@
+/*Prog3*/
+Program _pP; 
+Var Int16 _aA,_aB,_bB,_xX,_c1,_c2;
+Begin
+Put("Get _aA: ");
+Get(_aA);
+Put("Get _bB: ");
+Get(_bB);
+Put("For To Do");
+For _aB:=_aA To _bB Do
+{
+	Put("\n");
+	Put(_aB Mul _aB);
+}
+Put("\nFor Downto Do");
+For _aB:=_bB Downto _aA Do
+{
+	Put("\n");
+	Put(_aB Mul _aB);
+}
+
+Put("\nWhile _aA Mul _bB: ");
+_xX:=0;
+_c1:=0;
+While(_c1 << _aA) 
+{
+	_c2:=0;
+	While (_c2 << _bB)
+	{	
+		_xX:=_xX + 1;
+		_c2:=_c2 + 1;
+	}
+_c1:=_c1 + 1;	
+}
+Put(_xX);
+
+Put("\nRepeat Until _aA * _bB: ");
+_xX:=0;
+_c1:=1;
+Repeat
+  _c2:=1;
+  Repeat
+    _xX:=_xX+1;
+    _c2:=_c2+1;
+  Until(!!(_c2 >> _bB))
+  _c1:=_c1+1;
+Until(!!(_c1 >> _aA))
+Put(_xX);
+End

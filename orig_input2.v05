@@ -1,0 +1,35 @@
+Program _pR ; 
+Var Int16 _aA , _bB , _cC , _mA ;
+Begin
+  Get ( _aA );
+  Get ( _bB );
+  Get ( _cC );
+
+  If _aA >> _bB And _aA >> _cC {
+    _mA := _aA;
+  } If _bB >> _aA And _bB >> _cC {
+    _mA := _bB;
+  } If _cC >> _aA And _cC >> _bB {
+    _mA := _cC;
+  }
+  Put ( _mA );
+
+  If ! ( _aA Ne _bB ) And !( _aA Ne _cC ) And !( _bB Ne _cC ) {
+    Put ( 1 );
+  } Else {
+    Put ( 0 );
+  }
+    
+  If ! ( _aA << 0 ) Or ( _bB << 0 ) Or ( _cC << 0 ) {
+    Put ( -1 );
+  } Else {
+    Put ( 0 );
+  }
+
+  If !( _aA << ( _bB + _cC ) ) {
+    Put ( 10 );
+  } Else {
+    Put ( 0 );
+  }
+ 
+End

@@ -1,0 +1,19 @@
+Program _pR ; 
+Var Int16 _aA , _bB , _cA , _cB , _xV;
+Begin
+  Get ( _aA );
+  Get ( _bB );
+  _aA := 1;
+ For _cA := _aA To _bB Do{
+    Put ( _cA Mul _cA );
+}
+
+  _xV := 0;
+  For _cA := 1 To _aA Do {
+    For _cB := 1 To _bB Do {
+      _xV := _xV + 1;
+      }
+  }
+  Put ( _xV );
+
+End

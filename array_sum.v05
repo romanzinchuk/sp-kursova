@@ -1,0 +1,16 @@
+Program _pR ; 
+Var Int16 _aA[13] , _bB[13], _cC[13] , _iI;
+Begin
+For _iI := 0 To 12 Do {
+  _aA[_iI] := _iI;
+  _bB[_iI] := _iI; 
+}
+Put("Start\n");
+For _iI := 0 To 12 Do {
+  _bB[_iI] := _aA[_iI] + _bB[_iI];
+
+  Put(_bB[_iI]);
+  Put("\n");
+}
+
+End

@@ -1,0 +1,61 @@
+Program _pP; 
+Var Int16 _aA, _bB, _cC;
+Begin
+Put("Get _aA: ");
+Get(_aA);
+Put("Get _bB: ");
+Get(_bB);
+Put("Get _cC: ");
+Get(_cC);
+If _aA >> _bB
+{
+	If _aA >> _cC
+	{
+		Goto _aB;		
+	}	
+	Else
+	{
+		Put(_cC);
+		Goto _oF;
+		_aB:		
+		Put(_aA);
+		Goto _oF;
+	}
+}	
+	If _bB << _cC
+	{
+		Put(_cC);
+	}	
+	Else
+	{
+		Put(_bB);
+	}
+_oF:	
+Put("\n");
+If (_aA Eg _bB-1) And (_aA Eg _cC-1) And (_bB Eg _cC-1)
+{
+	Put(1);
+}	
+Else
+{
+	Put(0);
+}
+Put("\n");
+If (_aA << 0) Or (_bB << 0) Or (_cC << 0)
+{
+	Put(-1);
+}	
+Else
+{
+	Put(0);
+}
+Put("\n");
+If !!(_aA << (_bB + _cC))
+{
+	Put(10);
+}	
+Else
+{
+	Put(0);
+}
+End
