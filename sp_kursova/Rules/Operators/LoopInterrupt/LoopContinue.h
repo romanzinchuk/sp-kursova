@@ -10,7 +10,7 @@ class LoopContinue : public TokenBase<LoopContinue>, public BackusRuleBase<LoopC
     BASE_ITEM
 
 public:
-    LoopContinue() { setLexeme("Continue"); };
+    LoopContinue() { setLexeme("continue"); };
     virtual ~LoopContinue() = default;
 
     void genCode(std::ostream& out, GeneratorDetails& details,

@@ -10,7 +10,7 @@ class LoopBreak : public TokenBase<LoopBreak>, public BackusRuleBase<LoopBreak>,
     BASE_ITEM
 
 public:
-    LoopBreak() { setLexeme("Break"); };
+    LoopBreak() { setLexeme("break"); };
     virtual ~LoopBreak() = default;
 
     void genCode(std::ostream& out, GeneratorDetails& details,
